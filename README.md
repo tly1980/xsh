@@ -39,7 +39,11 @@ $> export XSH_USER=ubuntu
 
 And `xsh remotehost` would be equivalent to `ssh ubuntu@remotehost`
 
-And if you happend want to access a box with user named `tom`, simply do `xsh tom@tomsbox` would always bypass `XSH_USER` environment variable.
+And if you happend want to access a box with user named `tom`. To override `XSH_USER`, just simply do 
+
+```bash
+$> xsh tom@tomsbox
+```
 
 ## Installation
 
