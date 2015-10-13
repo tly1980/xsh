@@ -44,3 +44,11 @@ And if you happend want to access a box with user named `tom`, simply do `xsh to
 ## Installation
 
 Too simple, just wget it to your anywhere in your [PATH](https://en.wikipedia.org/wiki/PATH_(variable)), and don't forget [chmod](https://en.wikipedia.org/wiki/Chmod) it.
+
+That can be done with following command
+```bash
+$> wget https://raw.githubusercontent.com/tly1980/xsh/master/src/xsh.py -O /usr/local/bin/xsh
+$> chmod a+x /usr/local/bin/xsh
+```
+
+
