@@ -4,17 +4,18 @@ A simple ssh wrapper to make ssh tunneling easier.
 
 ## Why and examples ?
 
+When you have a remotehost to connect but you have to go through a jumpbox, you can do
+
 ```bash
 ssh remotehost -o ProxyCommand="ssh jumpbox nc %h %p"
 ```
-
-can be simplfied as
+But I always have trouble in memorizing ProxyCommand, so I implement `xsh` and that allows you do simply that as
 
 ```bash
 xsh remotehost -j jumpbox
 ```
 
-And by default, it will retry 50 times unless you add `--failfast` flag, which stop it after first try.
+And by default, it will retry 50 times unless you add `--failfast` flag, which will stop it after first try.
 
 If you are uncertain what it pass to `ssh` command, you can always add a `--dry` flag.
 
